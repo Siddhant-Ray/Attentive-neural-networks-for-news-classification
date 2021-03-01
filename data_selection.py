@@ -33,5 +33,45 @@ for _file in list_of_files:
 
 num_categories = len(all_categories)
 
+count_of_news_category = {}
+
+for key in category_news.keys():
+    item = category_news.get(key)
+    number_of_news_items = len(item)
+    count_of_news_category[key] = number_of_news_items
+
+print(count_of_news_category["CRIME"])
 print(category_news["CRIME"][0:2])
+
+
+def findIndexOfWordInSentence(sentence):
+    indexOfWord = {}
+    for index, word in enumerate(sentence):
+        indexOfWord[word] = index
+    return list(indexOfWord.values())
+
+import torch
+import torch.nn as nn 
+from torch import optim
+import torch.functional as F 
+
+import random
+import matplotlib
+import matplotlib.pyplot as plt 
+
+fig = plt.figure()
+category = count_of_news_category.keys()
+value = count_of_news_category.values()
+plt.bar(category, value)
+plt.xticks(rotation=90)
+plt.tight_layout()
+plt.savefig('test.png')
+plt.show()
+
+
+
+
+
+
+
 
