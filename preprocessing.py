@@ -29,7 +29,7 @@ for item in items:
     category = item_in_news_list[0].split(": ")[1]
     category = category.replace("\"", "")
     #print(category)
-    news = item_in_news_list[1].split(": ")[1] + " " + item_in_news_list[4].split(": ")[1]
+    news = item_in_news_list[1].split(": ")[1] + ". " + item_in_news_list[4].split(": ")[1]
     news = news.replace("\"","")
     #print(news)
     file_name = new_path+"%s.txt"%category
