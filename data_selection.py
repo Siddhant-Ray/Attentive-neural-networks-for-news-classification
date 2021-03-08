@@ -17,13 +17,13 @@ def unitoAscii(s):
     )
 
 def readFile_byline(filename):
-    line_of_news = open("news_data/"+filename , encoding = 'utf-8').read().split('\n')    
+    line_of_news = open("news_data_descriptions/"+filename , encoding = 'utf-8').read().split('\n')    
     return [unitoAscii(line) for line in line_of_news]
 
 category_news = {}
 all_categories = []
 
-list_of_files = os.listdir("news_data/")
+list_of_files = os.listdir("news_data_descriptions/")
 
 #Dictionary which maps every category of news to it's description
 for _file in list_of_files:
@@ -151,7 +151,7 @@ for pair in category_plus_news_list:
         for sentence in sentences:
             list_of_sentences.append(sentence)
 
-#print(list_of_sentences[0:10])
+print(list_of_sentences[0:10])
 
 embeddings = model.encode(list_of_sentences, bsize=128, tokenize=False, verbose=True)
 print('nb sentences encoded : {0}'.format(len(embeddings)))
@@ -163,6 +163,17 @@ X = embeddings
 X_embedded = TSNE(n_components=2).fit_transform(X)
 print(X_embedded.shape)
 
+import numpy as np 
+def cosine(u, v):
+    return np.dot(u, v) / (np.linalg.norm(u) * np.linalg.norm(v))
+
+print(cosine(embeddings[0],embeddings[10]))
+print(cosine(X_embedded[0],X_embedded[10]))
+sent1 = model.encode(['the cat eats'],bsize=128, tokenize=False, verbose=True)
+sent2 = model.encode(['the cat drinks'],bsize=128, tokenize=False, verbose=True)
+print(sent1.shape)
+print(sent2.shape)
+print(cosine(sent1[0],sent2[0]))
 
 
 
