@@ -260,7 +260,7 @@ def plot_losses():
         plt.yticks(size = 20)
 
         path = os.getcwd()
-        folder = "new_data_figs2"
+        folder = "data_figs_new"
         FILE = "loss-bert.png"
 
         path_save = os.path.join(path, folder)
@@ -276,7 +276,7 @@ def plot_losses():
         plt.yticks(size = 20)
 
         path = os.getcwd()
-        folder = "new_data_figs2"
+        folder = "data_figs_new"
         FILE = "acc-bert.png"
 
         path_save = os.path.join(path, folder)
@@ -293,7 +293,7 @@ def plot_losses():
         plt.yticks(size = 20)
 
         path = os.getcwd()
-        folder = "new_data_figs2"
+        folder = "data_figs_new"
         FILE = "F1-bert.png"
 
         path_save = os.path.join(path, folder)

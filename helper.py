@@ -134,12 +134,12 @@ class DatasetLoader(object):
         
         #print(average_words_per_number_of_samples)
 
-        if not os.path.isdir('new_data_figs'):
-            os.mkdir('new_data_figs')
+        if not os.path.isdir('data_figs_base'):
+            os.mkdir('data_figs_new')
             
 
         path = os.getcwd()
-        folder = "new_data_figs"
+        folder = "data_figs_new"
         FILE = "Number_of_articles_per_category.png"
 
         path_save = os.path.join(path, folder)
@@ -155,7 +155,7 @@ class DatasetLoader(object):
         plt.show()
 
         path = os.getcwd()
-        folder = "new_data_figs"
+        folder = "data_figs_base"
         FILE = "Words_per_category.png"
 
         path_save = os.path.join(path, folder)

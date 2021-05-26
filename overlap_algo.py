@@ -44,7 +44,7 @@ def class_similarity_algorithm():
     print(df.head())
 
     ### Print t-SNE plots for all classes and fit 2D histograms for all
-    save_dir = Path("class_new-tSNE")
+    save_dir = Path("tSNE_plots")
     if not save_dir.exists():
         save_dir.mkdir()
 
@@ -86,7 +86,7 @@ def class_similarity_algorithm():
     cbar.ax.tick_params(labelsize=22)
 
     path = os.getcwd()
-    folder = "new_data_figs"
+    folder = "data_figs_base"
 
     FILE = "jsdiv_full.png"
 
@@ -149,7 +149,7 @@ def class_similarity_algorithm():
     ### Plot combined tSNE vectors for all classes
     path = os.getcwd()
 
-    folder = "class_new-tSNE"
+    folder = "tSNE_plots"
     FILE = "clustered_tSNE.png"
 
     path_save = os.path.join(path, folder)

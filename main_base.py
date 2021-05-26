@@ -274,7 +274,7 @@ def plot_losses():
         plt.yticks(size = 20)
 
         path = os.getcwd()
-        folder = "new_data_figs"
+        folder = "data_figs_base"
         FILE = "loss-bert.png"
 
         path_save = os.path.join(path, folder)
@@ -290,7 +290,7 @@ def plot_losses():
         plt.yticks(size = 20)
 
         path = os.getcwd()
-        folder = "new_data_figs"
+        folder = "data_figs_base"
         FILE = "acc-bert.png"
 
         path_save = os.path.join(path, folder)
@@ -307,7 +307,7 @@ def plot_losses():
         plt.yticks(size = 20)
 
         path = os.getcwd()
-        folder = "new_data_figs"
+        folder = "data_figs_base"
         FILE = "F1-bert.png"
 
         path_save = os.path.join(path, folder)
@@ -459,7 +459,7 @@ cbar = matrix.collections[0].colorbar
 cbar.ax.tick_params(labelsize=22)
 
 path = os.getcwd()
-folder = "new_data_figs"
+folder = "data_figs_base"
 FILE = "confusion_matrix_unweighted.png"
 
 path_save = os.path.join(path, folder)
