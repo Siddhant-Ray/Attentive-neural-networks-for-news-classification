@@ -303,7 +303,7 @@ def plot_losses():
         plt.show()
 
         ### Run if you want to save the values to a file 
-        '''f = open("values2.txt",'w')
+        '''f = open("values_new.txt",'w')
         for i in range(len(epochs)):
             
             f.write("train_loss for epoch = {epoch}".format(epoch = epochs[i]+1) + " is " + str(train_losses[i]) + "\n")

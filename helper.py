@@ -40,7 +40,7 @@ class DatasetLoader(object):
             and c in self.all_letters
         )
 
-    ### Set folder as news_data_test/ or news_data_test2/ depending on which model to use.
+    ### Set folder as news_data_test/ or news_data_test2/ depending on whether to use base_dataset or updated_dataset after the algorithm.
     """ Read the news data files generated without or after combination """
     def readFile_byline(self,filename):
         line_of_news = open("news_data_test/"+filename , encoding = 'utf-8').read().split('\n')    

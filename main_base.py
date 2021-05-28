@@ -317,7 +317,7 @@ def plot_losses():
         plt.show()
 
         ### Run if you want to save the values to a file 
-        '''f = open("values1.txt",'w')
+        '''f = open("values_base.txt",'w')
         for i in range(len(epochs)):
             
             f.write("train_loss for epoch = {epoch}".format(epoch = epochs[i]+1) + " is " + str(train_losses[i]) + "\n")
@@ -515,7 +515,7 @@ X_embedded = TSNE(n_components = 2, perplexity = 40, n_jobs = -1, random_state =
 print(X_embedded.shape)
 
 df = pd.DataFrame({'X': X_embedded[:, 0], 'Y': X_embedded[:, 1], 'Label': target_labels})
-df.to_csv('tSNE_new_2epoch.csv', index=False)
+df.to_csv('tSNE_values.csv', index=False)
 
 
 

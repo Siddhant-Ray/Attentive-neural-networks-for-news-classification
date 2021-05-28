@@ -40,7 +40,7 @@ def class_similarity_algorithm():
     ### Number of news categories, over here 38.
     tot_classes = number_of_categories
 
-    df = pd.read_csv('tSNE_new_2epoch.csv')
+    df = pd.read_csv('tSNE_values.csv')
     print(df.head())
 
     ### Print t-SNE plots for all classes and fit 2D histograms for all

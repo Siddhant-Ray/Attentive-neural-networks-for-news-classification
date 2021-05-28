@@ -36,7 +36,8 @@ for item in items:
     #print(news)
     file_name = new_path+"%s.txt"%category
 
-    ### These categories are combined and dropped based on the algorithm.
+    ### These categories are combined and dropped based on the algorithm. Comment out section for generating base dataset with no 
+    ### combination of classes based on out algorithm.
     if category == "PARENTING":
         file_name = new_path+"PARENTS.txt"
     if category == "TASTE":
