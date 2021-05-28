@@ -23,27 +23,27 @@
 
 * Follow these steps:
 
-    + Use the script conda_install.sh
-    + Make it executable with chmod +x ./install_conda.sh
-    + Run with ./install_conda.sh
+    + Use the script `conda_install.sh`
+    + Make it executable with `chmod +x ./install_conda.sh`
+    + Run with `./install_conda.sh`
 
 * The installation creates the following two directories in the install location:
 
-    + conda: Contains the miniconda installation
+    + `conda`: Contains the miniconda installation
 
-    + conda_pkgs: Contains the cache for downloaded and decompressed packages
+    + `conda_pkgs`: Contains the cache for downloaded and decompressed packages
 
 * Creating the first environment creates an additional directory in the install location:
 
-    + conda_envs: Contains the created environment(s)
+    + `conda_envs`: Contains the created environment(s)
 
-* In conda/bin/, run ./conda init
+* In `conda/bin/` run `./conda init`
 
-* Now run conda create --name `<custom_name>` pytorch torchvision cudatoolkit=10.1 --channel pytorch (this is our specific version)
+* Now run `conda create --name <custom_name> pytorch torchvision cudatoolkit=10.1 --channel pytorch` (this is our specific version)
 
-* conda activate `<custom_name>` to activate the environment 
-* conda deactivate to deactivate the current environment 
-* install missing requirements mentioned abbe with pip install `<package> >= <version>`
+* Run `conda activate <custom_name>` to activate the environment 
+* Run `conda deactivate to deactivate` the current environment 
+* Install missing requirements mentioned abobe with `pip install <package> >= <version>`
 
 ## Dataset
 
