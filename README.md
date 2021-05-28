@@ -39,46 +39,46 @@
 
 * In conda/bin/, run ./conda init
 
-* Now run conda create --name <custom_name> pytorch torchvision cudatoolkit=10.1 --channel pytorch (this is our specific version)
+* Now run conda create --name `<custom_name>` pytorch torchvision cudatoolkit=10.1 --channel pytorch (this is our specific version)
 
-* conda activate <custom_name> to activate the environment 
+* conda activate `<custom_name>` to activate the environment 
 * conda deactivate to deactivate the current environment 
-* install missing requirements mentioned aobe with pip install <package> >= <version>
+* install missing requirements mentioned abbe with pip install `<package> >= <version>`
 
 ## Dataset
 
-* 'preprocessing.py' generates the required data files. 
+* `preprocessing.py` generates the required data files. 
 * Base dataset with all news categories is stored in 'news_data_test' in form of '.txt' files for every category.
 * Updated dataset with less categories is stored in 'news_data_test2' in the same way.
 
 ## Training and validating the model:
 
-* To train the base model on all news classes , run 'main_base.py'. If there is no saved model, it will train and automatically save the model. 
+* To train the base model on all news classes , run `main_base.py`. If there is no saved model, it will train and automatically save the model. 
 
-* To train the base model on reduced news classes , run 'main_new.py'. If there is no saved model, it will train and automatically save the model.
+* To train the base model on reduced news classes , run `main_new.py`. If there is no saved model, it will train and automatically save the model.
 
     + In the next run, it will automatically load the saved model instead of retraining.
 
-* Training and validation metrics are saved in 'values_base.txt' for the base model.
-* Training and and validation metrics are saved in 'values_new.txt' for the new model.
+* Training and validation metrics are saved in `values_base.txt` for the base model.
+* Training and and validation metrics are saved in `values_new.txt` for the new model.
 
-* Plots for the base model are in 'data_figs_base'.
-* Plots for the updated model are in 'data_figs_new'.
+* Plots for the base model are in `data_figs_base`.
+* Plots for the updated model are in `data_figs_new`.
 
 ## Visualizing the similarity algorithm:
 
-* Run 'overlap_algo.py' to visualize the class overlap on the base dataset. tSNE values are generated from 'main_base.py' and stored in 'tSNE_values.csv'.
+* Run `overlap_algo.py` to visualize the class overlap on the base dataset. tSNE values are generated from `main_base.py` and stored in `tSNE_values.csv`.
 * Thresholds can be changed in the file to adapt the algorithm.
 
 
 ## Other files:
 
-* 'model.py' contains our transformer model defintion.
-* 'helper.py' contains utility methods for dataset loading for the model, evaluation metric methods etc.
+* `model.py` contains our transformer model defintion.
+* `helper.py` contains utility methods for dataset loading for the model, evaluation metric methods etc.
 
 ## Note :
 
-* To change the dataset from base to updated, you need to change the dataset source in 'helper.py' from 'news_data_test' to 'news_data_test2' and vice-versa.
+* To change the dataset from base to updated, you need to change the dataset source in `helper.py` from `news_data_test` to `news_data_test2` and vice-versa.
 
 
 
