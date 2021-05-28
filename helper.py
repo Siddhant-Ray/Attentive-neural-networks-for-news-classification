@@ -43,12 +43,12 @@ class DatasetLoader(object):
     ### Set folder as news_data_test/ or news_data_test2/ depending on whether to use base_dataset or updated_dataset after the algorithm.
     """ Read the news data files generated without or after combination """
     def readFile_byline(self,filename):
-        line_of_news = open("news_data_test/"+filename , encoding = 'utf-8').read().split('\n')    
+        line_of_news = open("news_data_test2/"+filename , encoding = 'utf-8').read().split('\n')    
         return [self.unitoAscii(line) for line in line_of_news]
 
     """ Get the number of categories and the dictionary mapping eaxh entry ot its category"""    
     def get_categories(self):
-        list_of_files = os.listdir("news_data_test/")
+        list_of_files = os.listdir("news_data_test2/")
 
         #Dictionary which maps every category of news to its description
         for _file in list_of_files:

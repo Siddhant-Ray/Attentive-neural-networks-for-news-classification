@@ -42,14 +42,14 @@
 * Now run `conda create --name <custom_name> pytorch torchvision cudatoolkit=10.1 --channel pytorch` (this is our specific version)
 
 * Run `conda activate <custom_name>` to activate the environment 
-* Run `conda deactivate to deactivate` the current environment 
+* Run `conda deactivate` to deactivate the current environment 
 * Install missing requirements mentioned abobe with `pip install <package> >= <version>`
 
 ## Dataset
 
 * `preprocessing.py` generates the required data files. 
-* Base dataset with all news categories is stored in 'news_data_test' in form of '.txt' files for every category.
-* Updated dataset with less categories is stored in 'news_data_test2' in the same way.
+* Base dataset with all news categories is stored in `news_data_test` in form of `.txt` files for every category.
+* Updated dataset with less categories is stored in `news_data_test2` in the same way.
 
 ## Training and validating the model:
 
