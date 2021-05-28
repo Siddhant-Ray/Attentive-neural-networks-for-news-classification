@@ -79,6 +79,8 @@
 ## Note :
 
 * To change the dataset from base to updated, you need to change the dataset source in `helper.py` from `news_data_test` to `news_data_test2` and vice-versa.
+* We have the preliminary implementation of our RNN model in `RNNMODEL`. This requires some pre-requisites to be installed which are not `Pypi` standard. To install those, we 
+recommend you visit the original source [InferSent](https://github.com/facebookresearch/InferSent)
 
 
 
