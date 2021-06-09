@@ -15,7 +15,7 @@ all_categories =[]
 
 #items = items[0:100]
 
-new_dir = "news_data_final"
+new_dir = "news_data_test"
 parent_dir = "/scratch/sidray/Attentive-recurrent-neural-networks-for-categorizing-and-generating-news"
 
 path = os.path.join(parent_dir, new_dir)
@@ -35,7 +35,7 @@ for item in items:
     news = news.replace("\"","")
     #print(news)
     file_name = new_path+"%s.txt"%category
-    if category == "PARENTING":
+    '''if category == "PARENTING":
         file_name = new_path+"PARENTS.txt"
     if category == "TASTE":
         file_name = new_path+"FOOD & DRINK.txt"
@@ -48,9 +48,9 @@ for item in items:
     if category == "MONEY":
         file_name = new_path+"BUSINESS.txt"
     if category == "COLLEGE":
-        file_name = new_path+"EDUCATION.txt"
+        file_name = new_path+"EDUCATION.txt"'''
     if category == "THE WORLDPOST" or category == "WORLDPOST":
-        file_name = new_path+"WORLD NEWS.txt"
+        file_name = new_path+"WORLDPOST.txt"
     if category == "ARTS" or category == "CULTURE & ARTS":
         file_name = new_path+"ARTS & CULTURE.txt"
     f = open(file_name, "a")
