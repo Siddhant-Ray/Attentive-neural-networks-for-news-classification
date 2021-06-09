@@ -156,6 +156,12 @@ for pair in category_plus_news_list:
 embeddings = model.encode(list_of_sentences, bsize=128, tokenize=False, verbose=True)
 print('nb sentences encoded : {0}'.format(len(embeddings)))
 print(embeddings[0:10])
+print(embeddings.shape)
+
+from sklearn.manifold import TSNE
+X = embeddings
+X_embedded = TSNE(n_components=2).fit_transform(X)
+print(X_embedded.shape)
 
 
 
@@ -164,3 +170,4 @@ class RNN(nn.Module):
     def __init__(self, input_size, hidden_size):
         super(RNN, self).__init__()
         self.hidden_size = hidden_size
+
