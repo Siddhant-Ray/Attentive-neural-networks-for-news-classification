@@ -223,6 +223,7 @@ class newsDataset(torch.utils.data.Dataset):
     def __len__(self):
         return len(self.labels)
 
+""" Class to load dataset for calculating tSNE for the model"""
 class classDataset(torch.utils.data.Dataset):
     def __init__(self, encodings, labels):
         self.encodings = encodings
