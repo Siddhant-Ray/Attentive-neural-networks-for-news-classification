@@ -35,14 +35,14 @@ for item in items:
     news = news.replace("\"","")
     #print(news)
     file_name = new_path+"%s.txt"%category
+
+    ### These categories are combined and dropped based on the algorithm.
     if category == "PARENTING":
         file_name = new_path+"PARENTS.txt"
     if category == "TASTE":
         file_name = new_path+"FOOD & DRINK.txt"
     if category == "HEALTHY LIVING":
         file_name = new_path+"WELLNESS.txt"
-    '''if category == "STYLE & BEAUTY":
-        file_name = new_path+"STYLE.txt"'''
     if category == "ENVIRONMENT":
         file_name = new_path+"GREEN.txt"
     if category == "MONEY":
@@ -54,6 +54,8 @@ for item in items:
     if category == "IMPACT" or category == "FIFTY":
         continue
     
+
+    ### These categories are combined initially
     if category == "THE WORLDPOST" or category == "WORLDPOST":
         file_name = new_path+"WORLD NEWS.txt"
     if category == "ARTS" or category == "CULTURE & ARTS":
