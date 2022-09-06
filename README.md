@@ -1,6 +1,6 @@
 # Attentive-neural-networks-for-news-classification
 
-* The goal of this this project is to build a news classification neural network model which can classify a hierarchial news dataset. Along with this, we propose a novel algorithm to detect class overlap in news categories, wihc can be learnt from computation on our model's intermediate stages.
+* The goal of this this project is to build a news classification neural network model which can classify a hierarchial news dataset. Along with this, we propose a novel algorithm to detect class overlap in news categories, which can be learnt from computation on our model's intermediate stages.
 
 ## Requirments to run :
 
