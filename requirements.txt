@@ -1,5 +1,5 @@
 torch>=2.12.1
-torchvision>=0.27.0
+torchvision>=0.27.1
 jupyter>=1.1.1
 transformers>=5.12.1
 matplotlib>=3.11.0
